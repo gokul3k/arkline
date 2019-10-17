@@ -527,7 +527,7 @@ hr.new3 {
   
   position: fixed;
   width: 75px;
-  height: 75px;
+  height: 95px;
   bottom: 18px;
   right: 5px;
   background-position: center;
@@ -537,8 +537,8 @@ hr.new3 {
 
 #uparrow{
   color: rgb(255, 168, 5); 
-  height: 65px;
-  width: 65px;
+  height: 45px;
+  width: 45px;
 }
 #uparrow:hover{
   color: rgb(255, 126, 5); 
@@ -546,4 +546,5 @@ hr.new3 {
   width: 45px;
   cursor: pointer;
 }
+
 
