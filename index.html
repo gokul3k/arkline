@@ -12,14 +12,22 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <!--Leaflet Map script-->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 
 <body>
+  <!--Back to Top Button-->
+    <div class="backtotop">
+        <i id="uparrow" class="fas fa-caret-square-up"></i>
+    </div>
+<!--Back to Top Button-->
+
 
     <!--Start Home Section-->
     <div id="home">
@@ -38,17 +46,18 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutus">About Us</a>
+                        <a class="nav-link" href="#service">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Services</a>
+                        <a class="nav-link" href="#whatwedo">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quote">Get Quote</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contactus">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Get Quote</a>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -144,8 +153,8 @@
             </div>
               
         </div>
-      
 
+        
     </div>
     <!--End Service Section-->
 
@@ -164,10 +173,28 @@
                   <p id="imageSlide3">At Ark Line we are extremely proud of our heritage and our people, 
                     bringing together more than 75 years of freight-forwarding excellence under one roof, 
                     Ark Line is a certified and Licensed by the Federal Maritime Commission (FMC).
-                    <br><br><input type="button" class="button" value="Know More" >
-                  </p>
                     
+                    <div id="installed" style="display: none">
+                        <p>Employing more than 30 people across India, the company’s name has become synonymous with quality, 
+                          reliability, and efficiency. Best of all, Ark Line remains an independently run freight-forwarding 
+                          business that for decades has prided itself on personal service.
+                        </p>
+                        <p>So, whether you want to move a whole steel works from one side of the world to the other, or you have a 
+                          single package that needs to move from one side of the world to the other, when you call us or mail us, 
+                          you will be answered by Ark Line member, take your details and get the job done.We apply Complete Logistics
+                           Solutions in every aspect of our business from Freight Forwarding, Customs Clearance, Transportation, 
+                           Warehousing etc in short <span style="color:rgb(248, 164, 8);"> "Ark Has No Boundaries When it Comes To Logistics"</span></p> 
+                    </div>
+                  
+                  </p>
+                  <p>
+                      <input id="knowmorebtn" type="button" class="button" value="Know More" value="Show/Hide" onClick="showHideDiv('installed')">
+                  </p>  
               </div>
+
+              
+              
+              
               
             </div>
           </div>
@@ -176,27 +203,34 @@
     <div id="whatwedo">
         <div class="container">
           <div class="row" style="padding-top:60px;padding-bottom:60px;">
-            <div class="col-md-12 col-sm-12 col-lg-6  float-left">
+            <div class="col-sm-12 col-lg-4 col-md-4">
+              <div class="item" >
               <img src="img/line2.png" >
-              <h1 style="padding-top:10px; font-weight: bolder;">WHAT WE DO</h1>
+              <h1 style="padding-top:10px; font-weight: bolder;">OUR SERVICES</h1>
               <h6 style="padding-top:10px; padding-bottom: 20px;">Fast and secured delivery on scheduled time</h6>
-              <input type="button" class="button2" value="More Services">
+              <a href="#blog"><input type="button" class="button2" value="More Services"></a>
+              </div>
             </div>
            
-                <div class="col-sm-12 col-lg-2 col-md-12 text-center">
-                    <i class="fa fa-train" style="height: 100px;width: 100px;display: inline-block;border-radius: 50px;box-shadow: 0px 0px 2px #888;padding: 20px;"></i>
-                    <h5>SAMEDAY DISPATCH</h5>
+            
+                <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
+                    <p><i class="fa fa-train"></i></p>
+                    <h6><b>SAMEDAY DISPATCH</b></h6>
                 </div>
-                <div class="col-sm-12 col-lg-2 col-md-12 text-center">
-                    <i class="fa fa-bus" style="height: 100px;width: 100px;display: inline-block;border-radius: 50px;box-shadow: 0px 0px 2px #888;padding: 20px;"></i>
-                    <h5>URGENT<br>PARCEL</h5>
+                <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
+                  <p><i class="fa fa-bus"></i></p>
+                    <h6><b>URGENT PARCEL</b></h6>
                 </div>
-                <div class="col-sm-12 col-lg-2 col-md-12 text-center">
-                    <i class="fa fa-truck" style="height: 100px;width: 100px;display: inline-block;border-radius: 50px;box-shadow: 0px 0px 2px #888;padding: 20px;"></i>
-                    <h5>PICK UP & PACKING</h5>
+                <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
+                  <p><i class="fa fa-truck"></i></p>
+                    <h6><b>PICK UP & PACKING</b></h6>
                 </div>
-              
-            </div>
+                <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
+                  <p><i class="fa fa-truck"></i></p>
+                  <h6><b>FAST DELIVERY</b></h6>
+              </div>
+            
+          </div>
         </div>
     </div>
 
@@ -272,7 +306,7 @@
               <div class="card-body" >
                 <img class="card-img-top" src="img/line.png" alt="Card image cap" style="height: 20px;width:100px;" >
                 <h2 class="card-title" ><b>WOULD YOU LIKE<br>TO DISCUSS YOUR <br>NEEDS?</b></h2>
-                <br><input type="button" class="button3" value="CALL US KNOW" >
+                <br><a href="#footer"><input type="button" class="button3" value="CALL US KNOW" ></a>
               </div>
               </div>
             </div>
@@ -287,14 +321,16 @@
       <div class="container" style="padding-bottom:100px;">
         <div class="text-center">
           <img src="img/line.png" style="padding-top:85px;" >
-          <h1 style="padding-top:20px; font-weight: bolder;">LATEST FROM BLOG</h1>
+          <h1 style="padding-top:20px; font-weight: bolder;">MORE SERVICES</h1>
           <h6 style="padding-top:10px;">"Ark Has No Boundaries When it Comes To Logistics"</h6>
         <div class="row">
-          <div class="col-sm-12 col-lg-4 col-md-12">
-              <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title" ><b>Trucking Services</b></h5>
-                    <div class="row">
+          <div class="col-sm-12 col-lg-3 col-md-12">
+                <div class="card">
+                  <a target="_blank" id="anchor_card"  href="trucking.html">
+                   <div class="card-body">
+                      <i class="fas fa-shipping-fast"style="height:80px;width:80px; color: grey;"></i>
+                      <h5 class="card-title" ><b>Trucking Services</b></h5>
+                    <!-- <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6">
                             <span class="d-inline-block">Cargo</span>
                             <span class="d-inline-block float-left">
@@ -307,19 +343,21 @@
                                 <i class="fas fa-user"></i>
                             </span>
                         </div>
-                    </div>
+                    </div> -->
 
                     <p class="card-text">Ark Line offers seamless trucking and intermodal services for domestic and Overseas shipments. 
                       When shipping overseas, Ark Line can also accommodate[...]</p>
-                     
                   </div>
+                </a>
               </div>
-          </div>
-          <div class="col-sm-12 col-lg-4 col-md-12">
+            </div>
+          <div class="col-sm-12 col-lg-3 col-md-12">
               <div class="card">
+                  <a target="_blank" id="anchor_card"  href="customs.html">
                   <div class="card-body">
-                    <h5 class="card-title" ><b>Import & Export Customs Clearance Broker</b></h5>
-                    <div class="row">
+                      <i class="fas fa-clipboard-check"style="height:80px;width:80px; color: grey;"></i>
+                     <h5 class="card-title" ><b>Import & Export Customs Clearance Broker</b></h5>
+                    <!-- <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6">
                             <span class="d-inline-block ">Cargo</span>
                             <span class="d-inline-block float-left">
@@ -332,18 +370,21 @@
                                 <i class="fas fa-user"></i>
                             </span>
                         </div>
-                    </div>
-                    <p class="card-text">Ark Line nationally licensed in-house customs broker offers efficient and knowledgeable 
+                    </div> -->
+                    <p class="card-text">We are nationally licensed in-house customs broker offers efficient and knowledgeable 
                       customs brokerage services to[...]</p>
                       
                   </div>
+                  </a>
               </div>
           </div>
-          <div class="col-sm-12 col-lg-4 col-md-12">
+          <div class="col-sm-12 col-lg-3 col-md-12">
               <div class="card">
+                  <a target="_blank" id="anchor_card"  href="air.html">
                   <div class="card-body">
+                      <i class="fas fa-plane"style="height:80px;width:80px; color: grey;"></i>
                     <h5 class="card-title" ><b>Air Freight – Import And Export</b></h5>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6">
                             <span class="d-inline-block ">Cargo</span>
                             <span class="d-inline-block float-left">
@@ -356,20 +397,22 @@
                                 <i class="fas fa-user"></i>
                             </span>
                         </div>
-                    </div>
+                    </div> -->
                     <p class="card-text">As a top import and export air freight forwarder, we provide the highest level of 
                       personal and dedicated service for your[...]</p>
                       
                   </div>
+                  </a>
               </div>
           </div>
-        </div>
-        <!-- <div class="row">
-            <div class="col-sm-12 col-lg-4 col-md-12 ">
+        
+            <div class="col-sm-12 col-lg-3 col-md-12 ">
                 <div class="card">
+                    <a target="_blank" id="anchor_card"  href="ship.html">
                     <div class="card-body">
+                      <i class="fas fa-ship" style="height:80px;width:80px; color: grey;"></i>
                       <h5 class="card-title" ><b>Ocean Freight – Import And Export</b></h5>
-                      <div class="row">
+                      <!-- <div class="row">
                           <div class="col-sm-6 col-lg-6 col-md-6">
                               <span class="d-inline-block">Cargo </span>
                               <span class="d-inline-block float-left">
@@ -382,14 +425,15 @@
                                   <i class="fas fa-user"></i>
                               </span>
                           </div>
-                      </div>
+                      </div> -->
                       <p class="card-text">Ark Line is fully Licensed as a Non-Vessel Operating Common Carrier (NVOCC) and 
                         a bonded ocean freight forwarder. With over[...]</p>
                         
                     </div>
+                    </a>
                 </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -462,38 +506,80 @@
     <div id="footer">
           <div class="container" style="padding-top: 70px;">
               <div class="row">
-                  <div class="col-sm-6 col-lg-4 col-md-6">
-                      <img src="img/logo.png" ></a>
-                      <br><br><br>
-                      <p><span style="color: rgb(248, 164, 8);">ARK LINE</span> is a certified and licensed in transportation and logistics. 
-                      <p>Licensed by the Federal Maritime Commission.</p>
-                      <p><span style="color: rgb(248, 164, 8);">Address:</span> 37A,North Beach Third Lane,1st Floor BWC Towers, Chennai-600001, India </p>
-                      <p><span style="color: rgb(248, 164, 8);">Email:</span> info@arkline.net</p>
-                      <p><span style="color: rgb(248, 164, 8);">Phone:</span> 044 - 25222251/61/71/81</p>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-md-6" style="text-align: left;">
-                      <h4><b>LATEST POST</b></h4>
+                  <div class="col-sm-6 col-lg-3 col-md-6">
+                     
+                      <h5><b>LICENSE</b></h5>
                       <br><br>
-                      <p><img src="img/small1.jpg"><span style="color: rgb(248, 164, 8);">&nbsp;&nbsp;Ocean Freight – Import And Export</span></p>
+                      <p><span style="color: rgb(248, 164, 8);">ARK LINE</span> is a certified and licensed in transportation and logistics.<br> 
+                      Licensed by the Federal Maritime Commission (FMC) as:</p>
+                      <!-- <p><span style="color: rgb(248, 164, 8);">Address:</span> 37A,North Beach Third Lane,1st Floor BWC Towers, Chennai-600001, India </p>
+                      <p><span style="color: rgb(248, 164, 8);">Email:</span> info@arkline.net</p>
+                      <p><span style="color: rgb(248, 164, 8);">Phone:</span> 044 - 25222251/61/71/81</p> -->
+                      <p>Non-Vessel Operating Common Carrier (NVOCC)<hr class="new3"></p>
+                      <p>Ocean Transportation Intermediary (OTI)<hr class="new3"></p>
+                      <p>Ocean Freight Forwarder</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 col-md-6" style="text-align: left;">
+                      <h5><b>GET IN TOUCH</b></h5>
+                      <br><br>
+                      <p><span style="color: rgb(248, 164, 8);">Email:</span> info@arkline.net<hr class="new3"></p>
+                      <p><span style="color: rgb(248, 164, 8);">Phone:</span> 044 - 25222251/61/71/81<hr class="new3"></p>
+                      <p><span style="color: rgb(248, 164, 8);">Fax:</span> 044 - 25272281</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 col-md-6" style="text-align: left;">
+                      <h5><b>CALL US</b></h5>
+                      <br><br>
+                      <!-- <p><img src="img/small1.jpg"><span style="color: rgb(248, 164, 8);">&nbsp;&nbsp;Ocean Freight – Import And Export</span></p>
                       <p><img src="img/small2.jpg"><span style="color: rgb(248, 164, 8);">&nbsp;&nbsp;Air Freight – Import And Export</span></p>
                       <p><img src="img/small3.jpg"><span style="color: rgb(248, 164, 8);">&nbsp;&nbsp;Customs Clearance Broker</span></p>
-                      <p><img src="img/small1.jpg"><span style="color: rgb(248, 164, 8);">&nbsp;&nbsp;Trucking Services</span></p>
+                      <p><img src="img/small1.jpg"><span style="color: rgb(248, 164, 8);">&nbsp;&nbsp;Trucking Services</span></p> -->
+                      <p>Agesh Bhaskar<br>
+                        <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                        agesh@arkline.net<br>
+                        <i class="fa fa-phone" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                          +91 98402 82281<hr class="new3">
+                      </p>
+                      <p>R Shankar<br>
+                        <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                        shankar@arkline.net<br>
+                        <i class="fa fa-phone" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                            +91 98404 78009<hr class="new3"></p>
+                      <p>M Subbarayan<br>
+                        <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                        subbu@arkline.net<br>
+                        <i class="fa fa-phone" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                          +91 98400 85428<hr class="new3"></p>
+                      <p>Sidharth Patnaik<br>
+                        <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                        sidharth@arkline.net<br>
+                        <i class="fa fa-phone" aria-hidden="true" style="color: rgb(248, 164, 8);"></i>
+                        +91 98851 80101</p>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-md-6">
-                      <h4><b>NEWSLETTER</b></h4>
+                  <div class="col-sm-6 col-lg-3 col-md-6">
+                      <h5><b>LOCATE US</b></h5>
                       <br><br>
-                      <p>Stay conncted with us on Social media and subscribe to our newslatter. </p>
-                      <form action="/action_page.php">
+                      <p><span style="color: rgb(248, 164, 8);">Address:</span> 37A,North Beach Third Lane,1st Floor BWC Towers, Chennai-600001, India </p>
+                      
+                      <!--Code for Maps-->
+                          <a target="_blank" href="https://www.google.com/maps/place/ARK+LINE/@13.099754,80.293415,14z/data=!4m5!3m4!1s0x0:0x42429d9c4ae5be7a!8m2!3d13.0997535!4d80.2934149?hl=en">
+                            <div id="mapid">
+					                  </div>
+                          </a>
+                          <br><br>
+                     <img src="img/logo.png" alt="Logo">
+                      <!--Ending of Code for Maps-->
+
+                      <!-- <form action="/action_page.php">
                         <input type="text" id="email_subscribe" name="email" placeholder="Subscribe Here" style="color:#fff; background-color:#2f313d07;height:40px;width: 280px;">
                         <button class="button4" ><i class="fa fa-arrow-right" ></i></button>
                       </form>
-                      
-                      <br>
+                       -->
+                      <!-- <br>
                       <i class="fab fa-facebook-f" style="background-color:rgb(248, 164, 8); height: 35px; width: 35px;display: inline-block;border-radius:50px;box-shadow: 0px 0px 2px #888;padding: 10px;"></i>
                       &nbsp;&nbsp; 
                       <i class="fab fa-instagram" style="background-color:rgb(248, 164, 8); height: 35px; width: 35px;display: inline-block;border-radius:50px;box-shadow: 0px 0px 2px #888;padding: 10px;"></i>
                       &nbsp;&nbsp; 
-                      <i class="fab fa-twitter" style="background-color:rgb(248, 164, 8);  height: 35px; width: 35px;display: inline-block;border-radius: 50px;box-shadow: 0px 0px 2px #888;padding: 10px;"></i>
+                      <i class="fab fa-twitter" style="background-color:rgb(248, 164, 8);  height: 35px; width: 35px;display: inline-block;border-radius: 50px;box-shadow: 0px 0px 2px #888;padding: 10px;"></i> -->
                     </div>
                 </div>
              
@@ -505,7 +591,7 @@
         
         <div class="copyright">
           <hr class="new4">
-            <span>Developed by <a target="_blank" href="https://maxffort.com">Maxffort Technologies</a></span>
+            <span>Developed by <a target="_blank" href="https://maxffort.com"><span style="color:rgb(248, 164, 8);font-weight: bold;">Maxffort Technologies</span></a></span>
          </div> 
     </footer>
      
@@ -521,7 +607,37 @@
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <!--- End of Script Source Files -->
 
+
+<!--Back to Top Button Script-->
+<script>
+        
+    $('.backtotop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
+</script>
+<!--End of Back to Top Button Script-->
+
+
 <!--Script for image slide in about us-->
+
+<script type="text/javascript">
+  function showHideDiv(ele) {
+      var srcElement = document.getElementById(ele);
+      var elem = document.getElementById('knowmorebtn');
+      if (srcElement != null) {
+          if (srcElement.style.display == "block") {
+              srcElement.style.display = 'none';
+              elem.value = "Know More";
+          }
+          else {
+              srcElement.style.display = 'block';
+              elem.value = "Know Less";
+          }
+          return false;
+      }
+  }
+</script>
 
 <script>
 
@@ -585,6 +701,42 @@
           });
   </script>
 <!--End of Automatic sliding Script-->
+
+<!--Map script-->
+
+<script>
+    var mymap = L.map('mapid').setView([13.099750, 80.293411], 13);
+    
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom:22,
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      id: 'mapbox.streets'
+    }).addTo(mymap);
+    
+    
+    
+    var redIcon = new L.Icon({
+      iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+    
+    L.marker([13.099750, 80.293411], {icon: redIcon}).addTo(mymap);
+    
+    L.polygon([
+      [51.509, -0.08],
+      [51.503, -0.06],
+      [51.51, -0.047]
+    ]).addTo(mymap);
+    
+    </script>
+  
+<!--Map Script Ends-->
 
 <!--Slider Script -->
 <script>
