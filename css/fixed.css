@@ -248,15 +248,19 @@ section {
   background: linear-gradient(0deg, rgb(50, 69, 84,0.99), rgb(50, 69, 84,0.99)),url('../img/transparent-bg.png'); 
 }
 
-#imageSlide {
+#imageSlideBook {
   width: 90%;
   height: 350px;
 }
 
 @media (max-width: 480px){
-  #imageSlide{
+  #imageSlideBook{
     width: 100%;
     height: 300px;
+  }
+  #imageSlide{
+    width: 100%;
+    height: 200px;
   }
 }
 
