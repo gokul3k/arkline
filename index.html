@@ -33,8 +33,8 @@
     <div id="home">
         
         <!--Navigation bar-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" ></a>
+        <nav class="navbar navbar-expand-md navbar-dark navbar-default">
+            <a class="navbar-brand" href="index.html" style="font-size: 30px;"><span style="color: rgb(255, 168, 5);">ARK </span>LINE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -70,22 +70,22 @@
               
                     <div class="swiper-slide slide">
                       <div class="slide-image" style="background-image: url(img/slider/slide1.jpg)"></div>
-                      <span class="slide-title" style="font-size: 35px;">Tailor-made solutions</span>
+                      <p class="slide-title" >Tailor-made solutions<br>for any load</p>
                     </div>
               
                     <div class="swiper-slide slide">
                       <div class="slide-image" style="background-image: url(img/slider/slide2.jpg)"></div>
-                      <span class="slide-title" style="font-size: 35px;">Enthusiastic and devoted team</span>
+                      <p class="slide-title">Enthusiastic and devoted team</p>
                     </div>
               
                     <div class="swiper-slide slide">
                       <div class="slide-image" style= "background-image: url(img/slider/slide3.jpg)"></div>
-                      <span class="slide-title" style="font-size: 35px;">Enthusiastic and devoted team</span>
+                      <p class="slide-title">Independent, long-established<br>freight-forwarder</p>
                     </div>
-                  
-              
-                    
-              
+                    <div class="swiper-slide slide">
+                        <div class="slide-image" style= "background-image: url(img/slider/slide2.jpg)"></div>
+                        <p class="slide-title">Secure, efficient service<br>anywhere in the world</p>
+                    </div>              
                   </div>
               
                   <div class="slideshow-pagination"></div>
@@ -164,7 +164,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-8 col-sm-12 col-lg-6">
-                  <img id="imageSlide" src="img/van3.png" >
+                  <img id="imageSlide" src="img/logistics.png" >
                 
               </div>
               <div class="col-md-4 col-sm-12 col-lg-6 text-center">
@@ -214,20 +214,20 @@
            
             
                 <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
-                    <p><i class="fa fa-train"></i></p>
-                    <h6><b>SAMEDAY DISPATCH</b></h6>
+                    <p><i class="fas fa-anchor"></i></p>
+                    <h6><b>Ocean Freight Services</b></h6>
                 </div>
                 <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
-                  <p><i class="fa fa-bus"></i></p>
-                    <h6><b>URGENT PARCEL</b></h6>
+                  <p><i class="fas fa-plane-departure"></i></p>
+                    <h6><b>Air Freight Forwarder</b></h6>
                 </div>
                 <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
-                  <p><i class="fa fa-truck"></i></p>
-                    <h6><b>PICK UP & PACKING</b></h6>
+                  <p><i class="fa fa-shipping-fast"></i></p>
+                    <h6><b>Transportation Services</b></h6>
                 </div>
                 <div class="icons col-sm-12 col-lg-2 col-md-2 text-center" style="padding-top: 50px;" >
-                  <p><i class="fa fa-truck"></i></p>
-                  <h6><b>FAST DELIVERY</b></h6>
+                  <p><i class="fa fa-th-large"></i></p>
+                  <h6><b>Customs Brokerage</b></h6>
               </div>
             
           </div>
@@ -240,8 +240,8 @@
               <img src="img/line.png" style="padding-top:85px;" >
               <h1 style="padding-top:15px; font-weight: bold;">GET A QUOTE</h1>
               <div class="row">
-                  <div class="col-md-8 col-sm-12 col-lg-6">
-                      <form action="/action_page.php">
+                  <div class="col-md-12 col-sm-12 col-lg-6">
+                      <form id="contactus_form" action="https://formspree.io/gokulsreenivass@gmail.com" method="POST">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-lg-6 ">
                               <label>DELIVERY DATE</label>
@@ -256,19 +256,19 @@
                             <div class="col-md-6 col-sm-12 col-lg-6 "> 
                               <select name="Delivery">
                                   <option value="">Delivery Type</option>
-                                  <option value="roadways">Via Roadways</option>
-                                  <option value="airways">Via Airways</option>
-                                  <option value="seaways">Via Seaways</option>
+                                  <option value="Via roadways">Via Roadways</option>
+                                  <option value="Via airways">Via Airways</option>
+                                  <option value="Via seaways">Via Seaways</option>
                               </select>
                             </div>
                             <div class="col-md-6 col-sm-12 col-lg-6">  
                                 <select name="Weight">
                                     <option value="">Delivery Weight</option>
-                                    <option value="roadways">1KG to 5KG</option>
-                                    <option value="roadways">6KG to 10KG</option>
-                                    <option value="roadways">11KG to 20KG</option>
-                                    <option value="roadways">21KG to 50KG</option>
-                                    <option value="roadways">More than 50KG's</option>
+                                    <option value="1KG to 5KG">1KG to 5KG</option>
+                                    <option value="6KG to 10KG">6KG to 10KG</option>
+                                    <option value="11KG to 20KG">11KG to 20KG</option>
+                                    <option value="21KG to 50KG">21KG to 50KG</option>
+                                    <option value="More than 50KG's">More than 50KG's</option>
                                 </select>
                             </div>
                           </div>
@@ -277,7 +277,7 @@
                             <input type="text" id="fname" name="firstname" placeholder="Name">
                           </div>
                           <div class="col-md-6 col-sm-12 col-lg-6">  
-                            <input type="text" id="lname" name="lastname" placeholder="Number">
+                            <input type="text" id="lname" name="number" placeholder="Number">
                           </div>
                         </div>
                         <div class="row">
@@ -289,8 +289,8 @@
                       </form>
                     
                   </div>
-                  <div class="col-md-4 col-sm-12 col-lg-6">
-                      <img id="imageSlide" src="img/van3.png" style="padding-top:120px;">
+                  <div class="col-md-12 col-sm-12 col-lg-6">
+                      <img id="imageSlide" src="img/booked.png" style="width: 90%;height: 350px;">
                   </div>
               </div>
           </div>
@@ -311,7 +311,7 @@
               </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-md-12 text-center" >
-              <img src="img/truck.png" >
+              <img src="img/truck2.png" style="height: 380px; width: 100%;">
             </div>
         </div>
       </div>
@@ -325,10 +325,10 @@
           <h6 style="padding-top:10px;">"Ark Has No Boundaries When it Comes To Logistics"</h6>
         <div class="row">
           <div class="col-sm-12 col-lg-3 col-md-12">
-                <div class="card">
+                <div class="card shadow-lg p-3 mb-5 rounded">
                   <a target="_blank" id="anchor_card"  href="trucking.html">
                    <div class="card-body">
-                      <i class="fas fa-shipping-fast"style="height:80px;width:80px; color: grey;"></i>
+                      <i class="fas fa-shipping-fast"style="height:80px;width:80px;"></i>
                       <h5 class="card-title" ><b>Trucking Services</b></h5>
                     <!-- <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6">
@@ -352,10 +352,10 @@
               </div>
             </div>
           <div class="col-sm-12 col-lg-3 col-md-12">
-              <div class="card">
+              <div class="card shadow-lg p-3 mb-5 rounded">
                   <a target="_blank" id="anchor_card"  href="customs.html">
                   <div class="card-body">
-                      <i class="fas fa-clipboard-check"style="height:80px;width:80px; color: grey;"></i>
+                      <i class="fas fa-clipboard-check"style="height:80px;width:80px;"></i>
                      <h5 class="card-title" ><b>Import & Export Customs Clearance Broker</b></h5>
                     <!-- <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6">
@@ -371,18 +371,21 @@
                             </span>
                         </div>
                     </div> -->
-                    <p class="card-text">We are nationally licensed in-house customs broker offers efficient and knowledgeable[...]<br><br></p>
+                    <p class="card-text">We are nationally licensed 
+                      in-house customs broker offers efficient and knowledgeable customs 
+                      brokerage services to [...]<br><br></p>
                       
                   </div>
                   </a>
               </div>
           </div>
           <div class="col-sm-12 col-lg-3 col-md-12">
-              <div class="card">
+              <div class="card shadow-lg p-3 mb-5 rounded">
                   <a target="_blank" id="anchor_card"  href="air.html">
                   <div class="card-body">
-                      <i class="fas fa-plane"style="height:80px;width:80px; color: grey;"></i>
+                      <i class="fas fa-plane"style="height:80px;width:80px;"></i>
                     <h5 class="card-title" ><b>Air Freight – Import And Export</b></h5>
+                  
                     <!-- <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6">
                             <span class="d-inline-block ">Cargo</span>
@@ -406,10 +409,10 @@
           </div>
         
             <div class="col-sm-12 col-lg-3 col-md-12 ">
-                <div class="card">
+                <div class="card shadow-lg p-3 mb-5 rounded">
                     <a target="_blank" id="anchor_card"  href="ship.html">
                     <div class="card-body">
-                      <i class="fas fa-ship" style="height:80px;width:80px; color: grey;"></i>
+                      <i class="fas fa-ship" style="height:80px;width:80px; "></i>
                       <h5 class="card-title" ><b>Ocean Freight – Import And Export</b></h5>
                       <!-- <div class="row">
                           <div class="col-sm-6 col-lg-6 col-md-6">
@@ -426,7 +429,7 @@
                           </div>
                       </div> -->
                       <p class="card-text">Ark Line is fully Licensed as a Non-Vessel Operating Common Carrier (NVOCC) and 
-                        a bonded ocean freight forwarder. With over[...]</p>
+                        a bonded ocean freight forwarder[...]</p>
                         
                     </div>
                     </a>

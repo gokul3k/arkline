@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 /*--- Extra Bootstrap Column Padding --*/
+
+html,body{
+  font-family: 'Poppins', sans-serif;
+}
 
 [class*="col-"] {
   padding: 1rem;
@@ -20,6 +24,11 @@ margin-right: 0px!important;
   
   font-weight: bold;
 }
+.navbar-default {
+  background-color: #1b2631 ;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
 
 
 /*--- Fixed Landing Page Section --*/
@@ -84,6 +93,8 @@ margin-right: 0px!important;
 section {
   width: 100%;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .swiper-container {
@@ -112,25 +123,28 @@ section {
   filter: brightness(50%);
 }
 .slide-title {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
-  max-width: 50%;
+  max-width: 100%;
   white-space: normal;
-  word-break: break-word;
   color: #FFF;
+  align-content: center;
+  word-break: break-word; 
   z-index: 10;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
+  white-space: pre;  
 }
-@media (min-width: 45em) {
+@media (max-width: 576px) {
   .slide-title {
-    font-size: 7vw;
-    max-width: none;
+    font-size: 5vw;
+    max-width: 100%;
   }
 }
-.slide-title span {
+.slide-title span{
   white-space: pre;
+  word-break: break-word;
   display: inline-block;
   opacity: 0;
 }
@@ -195,7 +209,7 @@ section {
 .pagination-number {
   font-size: 1.8rem;
   color: #FFF;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0 0.5rem;
 }
 
@@ -226,14 +240,12 @@ section {
   border-radius: 10px;
   background-color: transparent;
   border-color: rgb(249, 199, 12);
+  height: 320px;
 }
 
 #service{ 
-  background-image: url('../img/transparent-bg.png');
-  background-size:contain;
-  background-position:center;
-  background-color: rgb(50, 69, 84);
   color: #fff;
+  background: linear-gradient(0deg, rgb(50, 69, 84,0.99), rgb(50, 69, 84,0.99)),url('../img/transparent-bg.png'); 
 }
 
 #aboutus{  
@@ -317,6 +329,7 @@ section {
   color: rgb(255, 168, 5);
 } 
 
+
 /* Form CSS */
 
 input[type=text], select {
@@ -331,7 +344,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: rgb(204, 143, 29);
+  background-color: rgb(255, 168, 5);
   color: white;
   padding: 12px 20px;
   margin: 8px 0;
@@ -340,7 +353,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: rgb(255, 168, 5);
+  background-color: rgb(204, 143, 29);
+  
 }
 
 input[type="date"] {
@@ -390,7 +404,8 @@ select[name="Weight"] {
 }
 
 #contactus{
-  background-image: url('../img/bg2.png');
+  
+  background: linear-gradient(0deg, rgb(255, 168, 5, 0.9), rgb(255, 168, 5,0.9)),url('../img/bg2.jpg'); 
 
 }
 #contactus .card{ 
@@ -420,18 +435,28 @@ select[name="Weight"] {
 }
 
 #blog .card{ 
+  height: 420px;
   background-color: #fff; 
   padding: 10px;
+  border: none;
+}
+#blog .card .card-title{
+  color: #2c3e50 ;
 }
 #blog .card .card-text{
-  text-align: justify;
-
+ margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  color:  #2c3e50 ;
 }
 #blog .card:hover{ 
+  transition: all .5s;
   background-color:rgb(255, 168, 5); 
-  color: #fff;
+  border: none;
   padding: 10px;
   cursor: pointer;
+}
+#blog .fa-shipping-fast, .fa-clipboard-check, .fa-plane, .fa-ship{
+  color:  #2c3e50 ;
 }
 #anchor_card{
   text-decoration: none;
@@ -546,5 +571,4 @@ hr.new3 {
   width: 45px;
   cursor: pointer;
 }
-
 
