@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ramaraja&display=swap');
 /*--- Extra Bootstrap Column Padding --*/
 
 html,body{
@@ -587,4 +588,12 @@ hr.new3 {
   width: 45px;
   cursor: pointer;
 }
-
+#footer a{
+  text-decoration: none;
+  color: #fff;
+}
+#footer a:hover{
+  color: orange;
+  font-weight: bold;
+  transition-duration: 10ms;
+}
